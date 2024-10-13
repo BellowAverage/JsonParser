@@ -26,7 +26,7 @@ func main() {
 
 	fmt.Println("Module: github.com/BellowAverage/JsonParser")
 	fmt.Println("Credit: BellowAverage (Chris Wang) | 10.13.2024 | NU MSDS-431 Assignment 3")
-	fmt.Println("Usage: ./csvtojl -[option] <input.csv> <output.jl>")
+	fmt.Println("Usage: ./cmd/csvtojl/csvtojl -[option] <input.csv> <output.jl>")
 
 	fmt.Println()
 
@@ -148,7 +148,7 @@ func printHelp() {
 	fmt.Println("  -a       Automatically detect header and data types.")
 	fmt.Println("  -help    Display available commands and options.")
 	fmt.Println("\nExample:")
-	fmt.Println("  csvtojl -a housesInput.csv housesOutput.jl")
+	fmt.Println("  ./cmd/csvtojl/csvtojl -a ./data/housesInput.csv housesOutput.jl")
 }
 
 func convertToJSON(headers []string, record []string) ([]byte, error) {
