@@ -6,7 +6,7 @@
 
 **Module:** [github.com/BellowAverage/JsonParser](https://github.com/BellowAverage/JsonParser)  
 **Credit:** BellowAverage (Chris Wang) | 10.13.2024 | NU MSDS-431 Assignment 3  
-**Description:** This is a utility module containing two commands: `csvtojl` and `jsparse`.
+**Description:** This is a utility project containing two commands: `csvtojl` and `jsparse`.
 
 ---
 
