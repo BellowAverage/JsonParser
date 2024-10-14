@@ -2,7 +2,7 @@
 
 **Introduction:** This repo includes a Json Parser Project that is used to practice handling Json files using Go. It also provides a publicly accessible API for reusing certain functions in this project.
 
-## Json Parser Project
+## Json Parser Project - A Command-Line Application
 
 **Module:** [github.com/BellowAverage/JsonParser](https://github.com/BellowAverage/JsonParser)  
 **Credit:** BellowAverage (Chris Wang) | 10.13.2024 | NU MSDS-431 Assignment 3  
@@ -66,9 +66,9 @@
 ---
 
 
-## BellowAverageCSV2JL API
+## JsonParser Module - A toolkit that Handles Json Files
 
-`csvtojl` is a Go module that converts CSV files into JSON Lines format by automatically detecting the CSV headers and data types. This module allows you to easily process CSV files and output each row as a JSON object, with headers as keys.
+```github.com/BellowAverage/JsonParser/public/``` is a Go module collection that handles Json files, although only 1 function is available now :D. That is ```csvtojl.BellowAverageCSV2JL```, which converts CSV files into JSON Lines format by automatically detecting the CSV headers and data types. This module allows you to easily process CSV files and output each row as a JSON object, with headers as keys.
 
 ### Features
 - Automatically detect CSV headers and corresponding data types (int, float, string).
@@ -84,6 +84,8 @@ go get github.com/BellowAverage/JsonParser/public
 ```
 
 ### Usage
+
+#### * This example is at ```./example```.
 
 #### 1. Example CSV File (`input.csv`)
 
@@ -110,7 +112,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/BellowAverage/JsonParser/API" // Ensure correct import path
+	"github.com/BellowAverage/JsonParser/public" // Ensure correct import path
 )
 
 func main() {
